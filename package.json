@@ -1,0 +1,39 @@
+{
+  "name": "programacionbackend-31-08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc && node dist/server.js",
+    "test:bdd": "node --import tsx ./node_modules/@cucumber/cucumber/bin/cucumber.js test/feature/**/*.feature --require test/step_definitions/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TizianaOchoa/ProgramacionBackend-31-08.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TizianaOchoa/ProgramacionBackend-31-08/issues"
+  },
+  "homepage": "https://github.com/TizianaOchoa/ProgramacionBackend-31-08#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/supertest": "^7.2.1",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
